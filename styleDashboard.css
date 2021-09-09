@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Benne&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  padding: 30px;
+  background-color: #dc2f02;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 23px;
+  color: white;
+  font-family: Poppins;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.navMain {
+  flex-basis: 93%;
+}
+
+.navOut a {
+  flex-basis: 7%;
+  color: #deedf0;
+}
+
+.navOut a:hover {
+  color: yellow;
+  font-weight: bold;
+}
+
+.jumbotron { 
+  background-color: #fb8500;
+  color: black;
+  text-align: center;
+  padding: 130px;
+  font-size: 30px;
+  font-family: "Baloo Tammudu 2";
+  line-height: 100px;
+}
+
+.toDoList {
+  background-color: #ffb703;
+  text-align: center;
+  height: 600px;
+  margin: 0 auto;
+  font-family: Poppins;
+  display: flex;
+}
+
+.todoCode {
+  flex-basis: 60%;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  overflow: auto;
+}
+
+.todoGIF {
+  flex-basis: 40%;
+}
+
+.formToDoList {
+  margin-bottom: 25px;
+  font-size: 45px;
+}
+
+.inputTextToDoList {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+button.simpanToDoList {
+  width: 70px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 7px;
+  font-family: Poppins;
+  cursor: pointer;
+}
+
+button.simpanToDoList:hover {
+  background-color: grey;
+  color: white;
+}
+
+.totalList {
+  margin: 0 auto;
+  width: 580px;
+  border-radius: 10px;
+  background-color: #d7d5c9;
+  box-shadow: 1px 1px 6px;
+}
+
+.liToDoList {
+  width: 550px;
+  margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+}
+
+.checkboxToDoList {
+  width: 20px;
+  height: 20px;
+  flex-basis: 10%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.labelToDoList {
+  font-family: Benne;
+  font-weight: 500;
+  font-size: 27px;
+  flex-basis: 80%;
+  text-align: left;
+}
+
+.deleteToDoList {
+  text-decoration: none;
+  color: red;
+  margin-top: 4px;
+  flex-basis: 10%;
+  font-size: 25px;
+}
+
+.deleteToDoList:hover {
+  font-weight: bold;
+}
+
+/* Awalan Slider */
+.slider {
+  overflow: hidden;
+}
+
+.slider figure {
+  position: relative;
+  width: 300%;
+  margin: 0;
+  animation: 40s slider infinite;
+}
+
+.slider figure img {
+  width: 33.333%;
+  height: 800px;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0%;
+  }
+  12% {
+    left: 0%;
+  }
+  24% {
+    left: -100%;
+  }
+  36% {
+    left: -100%;
+  }
+  48% {
+    left: -200%
+  }
+  60% {
+    left: -200%;
+  }
+  72% {
+    left: -100%
+  }
+  84% {
+    left: -100%
+  }
+  96% {
+    left: 0%;
+  }
+}
+
+.article {
+  background-color: #ffb703;
+  height: 600px;
+  text-align: center;
+  display: flex;
+}
+
+.articleGIF {
+  flex-basis: 40%;
+}
+
+.mainArticle {
+  flex-basis: 60%;
+}
+
+.mainArticle>h1 {
+  font-family: "Baloo Tammudu 2";
+  font-size: 70px;
+  color: #821D30;
+  margin-bottom: -10px;
+}
+
+.articleCard {
+  background-color: #dcd9ca;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 600px;
+  margin-bottom: 20px;
+  padding: 10px 40px;
+  box-shadow: 1px 1px 2px;
+  cursor: pointer;
+}
+
+.articleCard:hover {
+  background-color: #f5f1da;
+  box-shadow: 1px 1px 4px;
+}
+
+.articleCard h1 {
+  font-family: Poppins;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.articleCard a {
+  text-decoration: none;
+  color: red;
+}
+
+.articleCard a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.line {
+  position: absolute;
+}
+
+.articleCard:hover .line {
+  width: 10px;
+  background-color: #ffb703;
+  height: 2px;
+  animation: 0.35s line forwards;
+}
+
+@keyframes line {
+  20% {
+    width: 100px;
+  }
+  40% {
+    width: 200px;
+  }  
+  60% {
+    width: 300px;
+  }
+  80% {
+    width: 400px;
+  }
+  100% {
+    width: 520px;
+  }
+}
+
+.articleCard p {
+  margin-top: 20px;
+  font-family: Benne;
+}
+
+footer {
+  background-color: #dc2f02;
+  text-align: center;
+  padding: 30px;
+  color: white;
+  line-height: 45px;
+  font-family: Poppins;
+}
